@@ -1,3 +1,3 @@
 # PERSONAL WEBSITE
 CODED BY : NIKAS GHIMIRE <br>
-© : NIKAS GHIMIRE
+© All rights reserved
