@@ -13,6 +13,7 @@
 	/* Attempt MySQL server connection. Assuming you are running MySQL
 	server with default setting (user 'root' with no password) */
 	$link = mysqli_connect(DONOT ATTEMPT TO ACCESS THE DATABSE, POST.PHP IN A DYNAMIC HOST);
+	//IF YOU ARE ABOUT TO USE THIS CODE, REPLACE THE WARNING WITH YOUR HOSTNAME, UNAME, PASSWORD, DB NAME respectively
  
 	// Check connection
 	if($link === false){
