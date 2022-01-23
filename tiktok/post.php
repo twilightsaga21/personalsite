@@ -12,7 +12,7 @@
 
 	/* Attempt MySQL server connection. Assuming you are running MySQL
 	server with default setting (user 'root' with no password) */
-	$link = mysqli_connect("localhost", "root", "", "tiktok");
+	$link = mysqli_connect(DONOT ATTEMPT TO ACCESS THE DATABSE, POST.PHP IN A DYNAMIC HOST);
  
 	// Check connection
 	if($link === false){
