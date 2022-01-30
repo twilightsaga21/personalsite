@@ -1,0 +1,37 @@
+#include<stdio.h>
+int main(){
+	printf("WHICH OF THE FOLLOWING ACTIONS DO YOU WANT TO PERFORM ?\n");
+	printf("ENTER 1 FOR RECTANGLE AREA\n");
+	printf("ENTER 2 FOR CIRCLE AREA\n");
+	printf("ENTER 3 FOR TRIANGLE AREA\n");
+	
+	int decide;
+	
+	scanf("%d", &decide);
+	
+	switch (decide){
+		case 1:
+			float a;
+			float b;
+			printf("ENTER LENGTH AND BREADTH\n");
+			scanf("%f", &a);
+			scanf("%f", &b);
+			printf("AREA IS %f", a*b);
+			break;
+		case 2:
+			float r;
+			printf("ENTER RADIUS\n");
+			scanf("%f", &a);
+			printf("AREA IS %f", 3.14*r*r);
+			break;
+		case 3:
+			printf("ENTER BREADTH\n");
+			scanf("%f", &a);
+			printf("ENTER HEIGHT\n");
+			scanf("%f", &b);
+			printf("AREA IS %f", 0.5*a*b);
+			break;
+			
+	}
+	
+}
