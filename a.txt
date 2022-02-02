@@ -1,3 +1,54 @@
+
+//SITE WILL BE POLISHED LATER, AILE KAM CHALAU SARKAR
+
+// AUTHOR : DIWAS PANDIT
+// program to input speed of car and print fastest slowest and average
+
+#include <stdio.h>
+int main(){
+	int a[5]; // entered num are stored in array
+	int i,fast,slow;
+	float n,avg;
+	
+	printf("Enter 5 cars speed");
+	//using loop to store  number in array
+	
+	for (i=0;i<5;i++){
+		scanf("%d",&a[i]);
+	}
+	// for checking greatest num
+	fast=a[0]; // fastest car is assign with value of first element of array sothat program knows from where to compare.
+	slow=a[0];
+	
+	for (i=0;i<5;i++){
+		
+		if (a[i]>fas
+fast=a[0]; // fastest car is assign with value of first element of array sothat program knows from where to compare.
+	slow=a[0];
+	
+	for (i=0;i<5;i++){
+		
+		if (a[i]>fast){ // making comparison inorder to know which is fastest among 'fast' & 'a[i]'
+			fast= a[i]; // if value of a[i] is greater it will be stored in fast		}
+		}
+		if (a[i]<slow){  // making comparison inorder to know which is slowest among 'slow' & 'a[i]'
+			slow=a[i];// if value of a[i] is less than it will be stored in slow
+		}
+		
+n=n+a[i]; // sum of all cars
+	}
+	avg=n/5;
+	
+	printf("fastest speed in 5 car is %d\n",fast);
+	printf("slowest speed in 5 car is %d\n",slow);
+	printf("average speed in 5 car is %0.2f\n",avg);
+	
+	return(0);
+	
+}
+
+
+
 #include<stdio.h>
 int main(){
 	int a;
