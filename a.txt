@@ -1,37 +1,157 @@
 #include<stdio.h>
 int main(){
-	printf("WHICH OF THE FOLLOWING ACTIONS DO YOU WANT TO PERFORM ?\n");
-	printf("ENTER 1 FOR RECTANGLE AREA\n");
-	printf("ENTER 2 FOR CIRCLE AREA\n");
-	printf("ENTER 3 FOR TRIANGLE AREA\n");
+	int a;
+	printf("ENTER A DAY CODE\n");
+	scanf("%d", &a);
 	
-	int decide;
-	
-	scanf("%d", &decide);
-	
-	switch (decide){
+	switch(a){
 		case 1:
-			float a;
-			float b;
-			printf("ENTER LENGTH AND BREADTH\n");
-			scanf("%f", &a);
-			scanf("%f", &b);
-			printf("AREA IS %f", a*b);
-			break;
+			printf("ITS SUNDAY");
+		break;
+		
 		case 2:
-			float r;
-			printf("ENTER RADIUS\n");
-			scanf("%f", &a);
-			printf("AREA IS %f", 3.14*r*r);
-			break;
+			printf("ITS MONDAY");
+		break;
+		
 		case 3:
-			printf("ENTER BREADTH\n");
-			scanf("%f", &a);
-			printf("ENTER HEIGHT\n");
-			scanf("%f", &b);
-			printf("AREA IS %f", 0.5*a*b);
-			break;
+			printf("ITS TUESDAY");
+		break;
+		
+		case 4:
+			printf("ITS WEDNESDAY");
+		break;
+		
+		case 5:
+			printf("ITS THURSDAY");
+		break;
+		
+		case 6:
+			printf("ITS FRIDAY");
+		break;
+		
+		case 7:
+			printf("ITS SATURDAY");
+		break;
+		
+		default :
+			printf("INVALID INPUT");
+		break;
 			
 	}
-	
+return 0;
 }
+
+//////////////////////////////////
+
+
+#include<stdio.h>  
+  
+int main()  
+{  
+    char ch;  
+  
+    
+printf("Enter a Character\n");  
+    scanf("%c", &ch);  
+  
+    if(ch >= 65 && ch <= 90)  
+    {  
+        printf("%c is an Uppercase Alphabet\n", ch);  
+    }  
+    else if(ch >= 97 && ch <= 122)  
+    {  
+        printf("%c is an lowercase Alphabet\n", ch);  
+    }  
+    else if(ch >= 48 && ch <= 57)  
+    {  
+        printf("%c is a Number\n", ch);  
+    }  
+    else if( (ch >= 0  && ch <= 47) ||  
+             (ch >= 58 && ch <= 64) ||  
+             (ch >= 91 && ch <= 96) ||  
+             (ch >= 123 && ch <= 127))  
+    {  
+        printf("%c is a Special Character\n", ch);  
+    }  
+  
+    return 0;  
+}
+
+//////////////////////////
+
+#include<stdio.h>
+int main(){
+
+printf("INPUT YOUR PERCENTAGE\n");
+float p;
+scanf("%f", &p);
+
+if(p>=80){
+	printf("YOU GOT DISTINCTION");
+} else if(p>=70){
+	printf("YOU GOT FIRST DIVISION");
+} else if(p>=60){
+	printf("YOU GOT SECOND DIVISION");
+} else if(p>=50){
+	printf("YOU GOT THIRD DIVISION");
+} else if(p>=40){
+	printf("YOU GOT THIRD DIVISION");
+} else{
+	printf("YOU FAILED, STUDY HARD FOR NEXT TIME");
+}
+
+return 0;	
+}
+
+/////////////////
+
+#include<stdio.h>
+int main()
+{
+    int i;
+    int number;
+
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    for(i = 0; i <= number; i++)
+    {
+        if(number == i*i)
+        {
+            printf("%d IS A PERFECT SQUARE\n", number);
+
+            return 0;  
+        }
+    }
+    
+    printf("%d ISNT A PERFECT SQUARE\n", number);
+    return 0;
+}
+
+///////////////
+
+
+#include<stdio.h>
+int main(){
+
+int salary;
+printf("ENTER YOUR SALARY\n");
+scanf("%d", &salary);
+
+	if(salary>=25000 && salary<40000){
+		printf("YOU ARE CHAIRMAN\n");
+	} else if(salary>=20000 && salary<25000){
+		printf("YOU ARE A DIRECTOR");
+	} else if(salary>=15000 && salary<20000){
+		printf("YOU ARE A MANAGER");
+	} else if(salary>=8000 && salary<15000){
+		printf("YOU ARE AN ACCOUNTANT");
+	} else if(salary>5000 && salary<8000){
+		printf("YOU ARE A OFFICE BOY");
+	} else {
+		printf("GET A JOB");
+	}
+return 0;
+}
+
+///////////
