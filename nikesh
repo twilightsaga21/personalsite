@@ -1,0 +1,24 @@
+Cls
+Input "ENTER YOUR NAME "; A$
+Input "ENTER YOUR ADRESS "; B$
+Input "ENTER YOUR PHONE NO "; C
+Input "ENTER YOUR EMAIL "; D$
+Input "ENTER YOUR SALARY "; E
+If E > 10000 And E <= 15000 Then
+    BONUS = 8% * E
+ElseIf E > 15000 And E <= 20000 Then
+    BONUS = 6% * E
+ElseIf E > 20000 And E <= 25000 Then
+    BONUS = 4% * E
+ElseIf E > 25000 And E <= 30000 Then
+    BONUS = 2% * E
+Else
+    Print "INVALID SALARY ENTERED"
+End If
+Print "NAME "; A$
+Print "ADRESS "; B$
+Print "PHONE NO"; C
+Print "EMAIL "; D$
+Print "SALARY "; E
+Print "BONUS "; BONUS
+End
