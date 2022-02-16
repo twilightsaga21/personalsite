@@ -1,315 +1,543 @@
-//SITE WILL BE POLISHED LATER, AILE KAM CHALAU SARKAR
-
-//AUTHOR : NIKAS GHIMIRE
 #include<stdio.h>
-int main(){
-	int a, b, c;
-	printf("ENTER FIRST NUMBER\n");
-	scanf("%d", &a);
-	printf("ENTER SECOND NUMBER\n");
-	scanf("%d", &b);
-	printf("\n");
-	c=(a>b)?a/b:a*b;
-	printf("%d", c);
-	return 0;
-}
 
-#include<stdio.h>
-int main(){
-	
-	int a,b;
-	printf("ENTER OPERATION NUMBER\n");
-	scanf("%d", &a);
-	switch (a){
-	case 1:
-		printf("SCHOOL OF COMPUTER SCIENCE\nENTER YOUR BRANCH NUMBER\n");
-		scanf("%d", &b);
-		switch (b){
-		case 1:
-			printf("DEPARTMENT OF INFORMATIVES\n");
-		break;
-		case 2:
-			printf("DEPARTMENT OF MACHINE LEARNING\n");
-		break;
-		}
-	break;
-	
-	case 2:
-		printf("SCHOOL OF BUSINESS\n");
-	break;
-	
-	case 3:
-		printf("SCHOOL OF ENGEENERING\n");
-	break;
-	
-	}
-	return 0;
-}
-
-#include<stdio.h>
-int main(){
-	int a;
-	printf("GOOD LUCK, ENTER YOUR SCORE\n");
-	scanf("%d", &a);
-	
-	if(a>100){
-		printf("INVALID INPUT\n");
-	} else if(a>=90){
-		printf("A");
-	} else if(a>=80){
-		printf("B");
-	} else if(a>=70){
-		printf("C");
-	} else if(a>=60){
-		printf("D");
-	} else if(a>=50){
-		printf("E");
-    } else{
-		printf("F");
-	}
-	
-	return 0;
-}
-
-#include<stdio.h>
-int main(){
-	float a;
-	float b;
-	float c;
-	printf("ENTER YOUR ELECTRICITY UNITS\n");
-	scanf("%f", &a);
-	
-	if(a>0){
-		b=b+a*0.50;
-		a=a-50;
-	}
-	
-	if(a>50){
-		b=b+a*0.75;
-		a=a-75;
-	}
-	
-	if(a>100){
-		b=b+a*1.20;
-		a=a-100;
-	}
-	
-	if(a>250){
-		b=b+a*1.50;
-	}
-	
-	printf("YOUR UNIT COST IS %f\n", b);
-	printf("SURCHARGE IS 20%\n");
-	c= b+b*0.2;
-	printf("YOUR TOTAL COST INC SURCHARGE %f\n", c);
-	
-	return 0;
-}
-
-
-
-// AUTHOR : DIWAS PANDIT
-// program to input speed of car and print fastest slowest and average
-
-#include <stdio.h>
-int main(){
-	int a[5]; // entered num are stored in array
-	int i,fast,slow;
-	float n,avg;
-	
-	printf("Enter 5 cars speed");
-	//using loop to store  number in array
-	
-	for (i=0;i<5;i++){
-		scanf("%d",&a[i]);
-	}
-	// for checking greatest num
-	fast=a[0]; // fastest car is assign with value of first element of array sothat program knows from where to compare.
-	slow=a[0];
-	
-	for (i=0;i<5;i++){
-		
-		if (a[i]>fas
-fast=a[0]; // fastest car is assign with value of first element of array sothat program knows from where to compare.
-	slow=a[0];
-	
-	for (i=0;i<5;i++){
-		
-		if (a[i]>fast){ // making comparison inorder to know which is fastest among 'fast' & 'a[i]'
-			fast= a[i]; // if value of a[i] is greater it will be stored in fast		}
-		}
-		if (a[i]<slow){  // making comparison inorder to know which is slowest among 'slow' & 'a[i]'
-			slow=a[i];// if value of a[i] is less than it will be stored in slow
-		}
-		
-n=n+a[i]; // sum of all cars
-	}
-	avg=n/5;
-	
-	printf("fastest speed in 5 car is %d\n",fast);
-	printf("slowest speed in 5 car is %d\n",slow);
-	printf("average speed in 5 car is %0.2f\n",avg);
-	
-	return(0);
-	
-}
-
-
-
-#include<stdio.h>
-int main(){
-	int a;
-	printf("ENTER A DAY CODE\n");
-	scanf("%d", &a);
-	
-	switch(a){
-		case 1:
-			printf("ITS SUNDAY");
-		break;
-		
-		case 2:
-			printf("ITS MONDAY");
-		break;
-		
-		case 3:
-			printf("ITS TUESDAY");
-		break;
-		
-		case 4:
-			printf("ITS WEDNESDAY");
-		break;
-		
-		case 5:
-			printf("ITS THURSDAY");
-		break;
-		
-		case 6:
-			printf("ITS FRIDAY");
-		break;
-		
-		case 7:
-			printf("ITS SATURDAY");
-		break;
-		
-		default :
-			printf("INVALID INPUT");
-		break;
-			
-	}
-return 0;
-}
-
-//////////////////////////////////
-
-
-#include<stdio.h>  
-  
-int main()  
-{  
-    char ch;  
-  
-    
-printf("Enter a Character\n");  
-    scanf("%c", &ch);  
-  
-    if(ch >= 65 && ch <= 90)  
-    {  
-        printf("%c is an Uppercase Alphabet\n", ch);  
-    }  
-    else if(ch >= 97 && ch <= 122)  
-    {  
-        printf("%c is an lowercase Alphabet\n", ch);  
-    }  
-    else if(ch >= 48 && ch <= 57)  
-    {  
-        printf("%c is a Number\n", ch);  
-    }  
-    else if( (ch >= 0  && ch <= 47) ||  
-             (ch >= 58 && ch <= 64) ||  
-             (ch >= 91 && ch <= 96) ||  
-             (ch >= 123 && ch <= 127))  
-    {  
-        printf("%c is a Special Character\n", ch);  
-    }  
-  
-    return 0;  
-}
-
-//////////////////////////
-
-#include<stdio.h>
-int main(){
-
-printf("INPUT YOUR PERCENTAGE\n");
-float p;
-scanf("%f", &p);
-
-if(p>=80){
-	printf("YOU GOT DISTINCTION");
-} else if(p>=70){
-	printf("YOU GOT FIRST DIVISION");
-} else if(p>=60){
-	printf("YOU GOT SECOND DIVISION");
-} else if(p>=50){
-	printf("YOU GOT THIRD DIVISION");
-} else if(p>=40){
-	printf("YOU GOT THIRD DIVISION");
-} else{
-	printf("YOU FAILED, STUDY HARD FOR NEXT TIME");
-}
-
-return 0;	
-}
-
-/////////////////
-
-#include<stdio.h>
-int main()
+ int
+main ()
 {
-    int i;
-    int number;
-
-    printf("Enter a number: ");
-    scanf("%d", &number);
-
-    for(i = 0; i <= number; i++)
-    {
-        if(number == i*i)
-        {
-            printf("%d IS A PERFECT SQUARE\n", number);
-
-            return 0;  
-        }
-    }
-    
-    printf("%d ISNT A PERFECT SQUARE\n", number);
-    return 0;
-}
-
-///////////////
-
-
-#include<stdio.h>
-int main(){
-
-int salary;
-printf("ENTER YOUR SALARY\n");
-scanf("%d", &salary);
-
-	if(salary>=25000 && salary<40000){
-		printf("YOU ARE CHAIRMAN\n");
-	} else if(salary>=20000 && salary<25000){
-		printf("YOU ARE A DIRECTOR");
-	} else if(salary>=15000 && salary<20000){
-		printf("YOU ARE A MANAGER");
-	} else if(salary>=8000 && salary<15000){
-		printf("YOU ARE AN ACCOUNTANT");
-	} else if(salary>5000 && salary<8000){
-		printf("YOU ARE A OFFICE BOY");
-	} else {
-		printf("GET A JOB");
-	}
+  
+int a, b, c;
+  
+printf ("ENTER FIRST NUMBER\n");
+  
+scanf ("%d", &a);
+  
+printf ("ENTER SECOND NUMBER\n");
+  
+scanf ("%d", &b);
+  
+printf ("\n");
+  
+c = (a > b) ? a / b : a * b;
+  
+printf ("%d", c);
+  
 return 0;
+
 }
 
-///////////
+
+ 
+/////////////////////////////////////////////////
+  
+#include<stdio.h>
+  
+int
+main ()
+{
+  
+ 
+int a, b;
+  
+printf ("ENTER OPERATION NUMBER\n");
+  
+scanf ("%d", &a);
+  
+switch (a)
+    {
+    
+case 1:
+      
+printf ("SCHOOL OF COMPUTER SCIENCE\nENTER YOUR BRANCH NUMBER\n");
+      
+scanf ("%d", &b);
+      
+switch (b)
+  {
+  
+case 1:
+    
+printf ("DEPARTMENT OF INFORMATIVES\n");
+    
+break;
+  
+case 2:
+    
+printf ("DEPARTMENT OF MACHINE LEARNING\n");
+    
+break;
+  
+}
+      
+break;
+    
+ 
+case 2:
+      
+printf ("SCHOOL OF BUSINESS\n");
+      
+break;
+    
+ 
+case 3:
+      
+printf ("SCHOOL OF ENGEENERING\n");
+      
+break;
+    
+ 
+}
+  
+return 0;
+
+}
+
+
+ 
+/////////////////////////////////////////////////
+  
+#include<stdio.h>
+  
+int
+main ()
+{
+  
+int a;
+  
+printf ("GOOD LUCK, ENTER YOUR SCORE\n");
+  
+scanf ("%d", &a);
+  
+ 
+if (a > 100)
+    {
+      
+printf ("INVALID INPUT\n");
+    
+}
+  else if (a >= 90)
+    {
+      
+printf ("A");
+    
+}
+  else if (a >= 80)
+    {
+      
+printf ("B");
+    
+}
+  else if (a >= 70)
+    {
+      
+printf ("C");
+    
+}
+  else if (a >= 60)
+    {
+      
+printf ("D");
+    
+}
+  else if (a >= 50)
+    {
+      
+printf ("E");
+    
+}
+  else
+    {
+      
+printf ("F");
+    
+}
+  
+ 
+return 0;
+
+}
+
+
+ 
+/////////////////////////////////////////////////
+  
+#include<stdio.h>
+  
+int
+main ()
+{
+  
+float a;
+  
+float b;
+  
+float c;
+  
+printf ("ENTER YOUR ELECTRICITY UNITS\n");
+  
+scanf ("%f", &a);
+  
+ 
+if (a > 0)
+    {
+      
+b = b + a * 0.50;
+      
+a = a - 50;
+    
+}
+  
+ 
+if (a > 50)
+    {
+      
+b = b + a * 0.75;
+      
+a = a - 75;
+    
+}
+  
+ 
+if (a > 100)
+    {
+      
+b = b + a * 1.20;
+      
+a = a - 100;
+    
+}
+  
+ 
+if (a > 250)
+    {
+      
+b = b + a * 1.50;
+    
+}
+  
+ 
+printf ("YOUR UNIT COST IS %f\n", b);
+  
+printf ("SURCHARGE IS 20%\n");
+  
+c = b + b * 0.2;
+  
+printf ("YOUR TOTAL COST INC SURCHARGE %f\n", c);
+  
+ 
+return 0;
+
+}
+
+
+ 
+/////////////////////////////////////////////////
+  
+#include <stdio.h>
+  
+int
+main ()
+{
+  
+int a[5];     // entered num are stored in array
+  int i, fast, slow;
+  
+float n, avg;
+  
+ 
+printf ("Enter 5 cars speed");
+  
+    //using loop to store  number in array
+    
+for (i = 0; i < 5; i++)
+    {
+      
+scanf ("%d", &a[i]);
+    
+}
+  
+    // for checking greatest num
+    fast = a[0];    // fastest car is assign with value of first element of array sothat program knows from where to compare.
+  slow = a[0];
+  
+ 
+for (i = 0; i < 5; i++)
+    {
+      
+ 
+if (a[i] > fas fast = a[0]; // fastest car is assign with value of first element of array sothat program knows from where to compare.
+       slow = a[0]; 
+ 
+for (i = 0; i < 5; i++)
+       {
+       
+ 
+if (a[i] > fast)
+       {      // making comparison inorder to know which is fastest among 'fast' & 'a[i]'
+       fast = a[i]; // if value of a[i] is greater it will be stored in fast               }
+       }
+       
+if (a[i] < slow)
+       {      // making comparison inorder to know which is slowest among 'slow' & 'a[i]'
+       slow = a[i]; // if value of a[i] is less than it will be stored in slow
+       }
+       
+ 
+n = n + a[i]; // sum of all cars
+       }
+       
+avg = n / 5; 
+ 
+printf ("fastest speed in 5 car is %d\n", fast);
+       printf ("slowest speed in 5 car is %d\n", slow);
+       printf ("average speed in 5 car is %0.2f\n", avg); 
+ 
+return (0);
+       
+ 
+}
+       
+ 
+/////////////////////////////////////////////////
+       
+#include<stdio.h>
+       
+int main ()
+       {
+       
+int a; 
+printf ("ENTER A DAY CODE\n"); 
+scanf ("%d", &a);
+       
+ 
+switch (a)
+       {
+
+case 1:
+
+printf ("ITS SUNDAY"); 
+break; 
+ 
+case 2:
+
+printf ("ITS MONDAY"); 
+break; 
+ 
+case 3:
+
+printf ("ITS TUESDAY"); 
+break; 
+ 
+case 4:
+
+printf ("ITS WEDNESDAY"); 
+break; 
+ 
+case 5:
+
+printf ("ITS THURSDAY"); 
+break; 
+ 
+case 6:
+
+printf ("ITS FRIDAY"); 
+break; 
+ 
+case 7:
+
+printf ("ITS SATURDAY"); 
+break; 
+ 
+default:
+       
+printf ("INVALID INPUT"); 
+break; 
+ 
+}
+       
+return 0; 
+}
+       
+ 
+/////////////////////////////////////////////////
+       
+#include<stdio.h>
+       
+int main ()
+       {
+       
+char ch; 
+ 
+printf ("Enter a Character\n"); 
+scanf ("%c", &ch);
+       
+ 
+if (ch >= 65 && ch <= 90)
+       {
+       
+printf ("%c is an Uppercase Alphabet\n", ch); 
+}
+       else
+       if (ch >= 97 && ch <= 122)
+       {
+       
+printf ("%c is an lowercase Alphabet\n", ch); 
+}
+       else
+       if (ch >= 48 && ch <= 57)
+       {
+       
+printf ("%c is a Number\n", ch); 
+}
+       else
+       if ((ch >= 0 && ch <= 47) || 
+     (ch >= 58 && ch <= 64) || 
+     (ch >= 91 && ch <= 96) || 
+(ch >= 123 && ch <= 127))
+       {
+       
+printf ("%c is a Special Character\n", ch); 
+}
+       
+ 
+return 0; 
+}
+       
+ 
+/////////////////////////////////////////////////
+       
+#include<stdio.h>
+       
+int main ()
+       {
+       
+ 
+printf ("INPUT YOUR PERCENTAGE\n"); 
+float p;
+       
+scanf ("%f", &p); 
+ 
+if (p >= 80)
+       {
+       
+printf ("YOU GOT DISTINCTION"); 
+}
+       else
+       if (p >= 70)
+       {
+       
+printf ("YOU GOT FIRST DIVISION"); 
+}
+       else
+       if (p >= 60)
+       {
+       
+printf ("YOU GOT SECOND DIVISION"); 
+}
+       else
+       if (p >= 50)
+       {
+       
+printf ("YOU GOT THIRD DIVISION"); 
+}
+       else
+       if (p >= 40)
+       {
+       
+printf ("YOU GOT THIRD DIVISION"); 
+}
+       else
+       {
+       
+printf ("YOU FAILED, STUDY HARD FOR NEXT TIME"); 
+}
+       
+ 
+return 0; 
+}
+       
+ 
+/////////////////////////////////////////////////
+       
+#include<stdio.h>
+       
+int main ()
+       {
+       
+int i; 
+int number; 
+ 
+printf ("Enter a number: ");
+       
+scanf ("%d", &number); 
+ 
+for (i = 0; i <= number; i++)
+       {
+       
+if (number == i * i)
+       {
+       
+printf ("%d IS A PERFECT SQUARE\n", number); 
+ 
+return 0; 
+}
+       
+}
+       
+ 
+printf ("%d ISNT A PERFECT SQUARE\n", number); 
+return 0; 
+}
+       
+ 
+/////////////////////////////////////////////////
+       
+#include<stdio.h>
+       
+int main ()
+       {
+       
+ 
+int salary; 
+printf ("ENTER YOUR SALARY\n");
+       
+scanf ("%d", &salary); 
+ 
+if (salary >= 25000 && salary < 40000)
+       {
+       
+printf ("YOU ARE CHAIRMAN\n"); 
+}
+       else
+       if (salary >= 20000 && salary < 25000)
+       {
+       
+printf ("YOU ARE A DIRECTOR"); 
+}
+       else
+       if (salary >= 15000 && salary < 20000)
+       {
+       
+printf ("YOU ARE A MANAGER"); 
+}
+       else
+       if (salary >= 8000 && salary < 15000)
+       {
+       
+printf ("YOU ARE AN ACCOUNTANT"); 
+}
+       else
+       if (salary > 5000 && salary < 8000)
+       {
+       
+printf ("YOU ARE A OFFICE BOY"); 
+}
+       else
+       {
+       
+printf ("GET A JOB"); 
+}
+       
+return 0; 
+}
+       
+ 
+/////////////////////////////////////////////////
