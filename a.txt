@@ -1,5 +1,112 @@
-
 //SITE WILL BE POLISHED LATER, AILE KAM CHALAU SARKAR
+
+//AUTHOR : NIKAS GHIMIRE
+#include<stdio.h>
+int main(){
+	int a, b, c;
+	printf("ENTER FIRST NUMBER\n");
+	scanf("%d", &a);
+	printf("ENTER SECOND NUMBER\n");
+	scanf("%d", &b);
+	printf("\n");
+	c=(a>b)?a/b:a*b;
+	printf("%d", c);
+	return 0;
+}
+
+#include<stdio.h>
+int main(){
+	
+	int a,b;
+	printf("ENTER OPERATION NUMBER\n");
+	scanf("%d", &a);
+	switch (a){
+	case 1:
+		printf("SCHOOL OF COMPUTER SCIENCE\nENTER YOUR BRANCH NUMBER\n");
+		scanf("%d", &b);
+		switch (b){
+		case 1:
+			printf("DEPARTMENT OF INFORMATIVES\n");
+		break;
+		case 2:
+			printf("DEPARTMENT OF MACHINE LEARNING\n");
+		break;
+		}
+	break;
+	
+	case 2:
+		printf("SCHOOL OF BUSINESS\n");
+	break;
+	
+	case 3:
+		printf("SCHOOL OF ENGEENERING\n");
+	break;
+	
+	}
+	return 0;
+}
+
+#include<stdio.h>
+int main(){
+	int a;
+	printf("GOOD LUCK, ENTER YOUR SCORE\n");
+	scanf("%d", &a);
+	
+	if(a>100){
+		printf("INVALID INPUT\n");
+	} else if(a>=90){
+		printf("A");
+	} else if(a>=80){
+		printf("B");
+	} else if(a>=70){
+		printf("C");
+	} else if(a>=60){
+		printf("D");
+	} else if(a>=50){
+		printf("E");
+    } else{
+		printf("F");
+	}
+	
+	return 0;
+}
+
+#include<stdio.h>
+int main(){
+	float a;
+	float b;
+	float c;
+	printf("ENTER YOUR ELECTRICITY UNITS\n");
+	scanf("%f", &a);
+	
+	if(a>0){
+		b=b+a*0.50;
+		a=a-50;
+	}
+	
+	if(a>50){
+		b=b+a*0.75;
+		a=a-75;
+	}
+	
+	if(a>100){
+		b=b+a*1.20;
+		a=a-100;
+	}
+	
+	if(a>250){
+		b=b+a*1.50;
+	}
+	
+	printf("YOUR UNIT COST IS %f\n", b);
+	printf("SURCHARGE IS 20%\n");
+	c= b+b*0.2;
+	printf("YOUR TOTAL COST INC SURCHARGE %f\n", c);
+	
+	return 0;
+}
+
+
 
 // AUTHOR : DIWAS PANDIT
 // program to input speed of car and print fastest slowest and average
