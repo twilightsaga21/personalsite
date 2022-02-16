@@ -1,54 +1,108 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <style>
-  pre {
-    color: white;
-    font-family: ;
-  }
-  body{
-    background-color: green;
-  }
-  h1{
-    text-align: center;
-    color: purple;
-    font-family: calibri;
-    background-color: yellow;
-    width: 30%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 15px;
-    margin-bottom: 3%;
-  }
-  div{
-    margin-left: 10%;
-    background-color: crimson;
-    padding-left: 5%;
-    margin-right: 10%;
-    padding-right: 4%;
-    margin-top: 2%;
-    padding-bottom: 5%;
-    border-radius: 15px;
-  }
-  h4{
-    text-align: center;
-    color: white;
-    font-family: ;
-  }
-  pre{
-  font-size: 15px; 
-  }
-</style>
-  <title>C CODE</title>
-</head>
-<body><br>
-  <center><h1>COMPUTER<br>LAB QUESTION<br>SOLUTIONS</h1></center>
-  <hr width="40%">
-  <h4>AUTHORS : NIKAS, MIJAN, DIWAS</h4><hr width="30%">
-<pre>
-<code>
-<hr><div>
+   <head>
+      <style>
+         pre {
+         color: white;
+         font-family: ;
+         font-size: 15px;
+         }
+         body {
+         background-color: green;
+         }
+         h1 {
+         text-align: center;
+         color: purple;
+         font-family: calibri;
+         background-color: yellow;
+         width: 30%;
+         padding-top: 10px;
+         padding-bottom: 10px;
+         border-radius: 15px;
+         margin-bottom: 3%;
+         }
+         div {
+         background-color: crimson;
+         margin-right: 10%;
+         margin-left: 10%;
+         margin-top: 2%;
+         padding-bottom: 5%;
+         border-radius: 10px;
+         padding-top: 1%;
+         max-width: 80%;
+         padding-right: 5%;
+         padding-left: 5%;
+         overflow: auto;
+         }
+         h4 {
+         text-align: center;
+         color: white;
+         font-family: ;
+         }
+         ::-webkit-scrollbar {
+         border: 1em;
+         border-radius: 5%;
+         height: 15px;
+         color: white;
+         }
+         ::-webkit-scrollbar-track {
+         border-radius: 15px;
+         }
+         ::-webkit-scrollbar-thumb {
+         background-color: darkgrey;
+         outline: 1px solid slategrey;
+         border-radius: 100px;
+         }
+         .blink {
+         animation: blink-animation 1s steps(5, start) infinite;
+         -webkit-animation: blink-animation 1s steps(2, start) infinite;
+         }
+         @keyframes blink-animation {
+         to {
+         visibility: hidden;
+         }
+         }
+         @-webkit-keyframes blink-animation {
+         to {
+         visibility: hidden;
+         }
+         }
+        .a {
+         margin-top: 1%;
+         }
+      </style>
+      <title>C CODE</title>
+   </head>
+   <body>
+      <hr class="a">
+      <center>
+         <br>
+         <pre><class class="blink">
 
+ █     █░▓█████  ██▓     ▄████▄   ▒█████   ███▄ ▄███▓▓█████ 
+▓█░ █ ░█░▓█   ▀ ▓██▒    ▒██▀ ▀█  ▒██▒  ██▒▓██▒▀█▀ ██▒▓█   ▀ 
+▒█░ █ ░█ ▒███   ▒██░    ▒▓█    ▄ ▒██░  ██▒▓██    ▓██░▒███   
+░█░ █ ░█ ▒▓█  ▄ ▒██░    ▒▓▓▄ ▄██▒▒██   ██░▒██    ▒██ ▒▓█  ▄ 
+░░██▒██▓ ░▒████▒░██████▒▒ ▓███▀ ░░ ████▓▒░▒██▒   ░██▒░▒████▒
+░ ▓░▒ ▒  ░░ ▒░ ░░ ▒░▓  ░░ ░▒ ▒  ░░ ▒░▒░▒░ ░ ▒░   ░  ░░░ ▒░ ░
+  ▒ ░ ░   ░ ░  ░░ ░ ▒  ░  ░  ▒     ░ ▒ ▒░ ░  ░      ░ ░ ░  ░
+  ░   ░     ░     ░ ░   ░        ░ ░ ░ ▒  ░      ░      ░   
+    ░       ░  ░    ░  ░░ ░          ░ ░         ░      ░  ░
+                        ░
+                      </class></pre>
+      </center>
+      <hr>
+      <br>
+      <center>
+         <h1>COMPUTER<br>LAB QUESTION<br>SOLUTIONS</h1>
+      </center>
+      <hr width="40%">
+      <h4>AUTHORS : NIKAS, MIJAN, DIWAS</h4>
+      <hr width="30%">
+      <br>
+      <br>
+      <pre>
+<hr><div>
 #include&lt;stdio.h&gt;
 int main(){
   
@@ -243,18 +297,17 @@ return 0;
 <hr><div>
   
 #include &lt;stdio.h&gt;
-//AUTHOR DIWAS
+
 int main(){
   
-int a[5];     // entered num are stored in array
+int a[5];     
   int i, fast, slow;
   
 float n, avg;
   
  
 printf ("Enter 5 cars speed");
-  
-    //using loop to store  number in array
+
     
 for (i = 0; i &lt; 5; i++)
     {
@@ -262,8 +315,7 @@ for (i = 0; i &lt; 5; i++)
 scanf ("%d", &amp;a[i]);
     
 }
-  
-    // for checking greatest num
+
     fast = a[0];   
   slow = a[0];
   
@@ -280,13 +332,13 @@ for (i = 0; i &lt; 5; i++)
        
  
 if (a[i] &gt; fast)
-       {      // making comparison inorder to know which is fastest among 'fast' &amp; 'a[i]'
-       fast = a[i]; // if value of a[i] is greater it will be stored in fast
+       {      
+       fast = a[i];
        }
        
 if (a[i] &lt; slow)
-       {      // making comparison inorder to know which is slowest among 'slow' &amp; 'a[i]'
-       slow = a[i]; // if value of a[i] is less than it will be stored in slow
+       {      
+       slow = a[i]; 
        }
        
  
@@ -359,8 +411,9 @@ break;
 return 0; 
 
 }
-</div>     
+</div>    
 <hr><h2 align="center">
 THE END</h3><br><hr>
-</code></pre>
-</body></html>
+</pre>
+   </body>
+</html>
