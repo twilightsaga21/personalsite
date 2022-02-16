@@ -145,58 +145,56 @@ return 0;
 /////////////////////////////////////////////////
   
 #include<stdio.h>
-  
-int main(){
-  
-float a;
-  
-float b;
-  
-float c;
-  
-printf ("ENTER YOUR ELECTRICITY UNITS\n");
-  
-scanf ("%f", &a);
-  
- 
-if (a > 0){     
-b = b + a * 0.50;     
-a = a - 50;   
-}
-  
- 
-if (a > 50){
-b = b + a * 0.75;
-a = a - 75;    
-}
-  
- 
-if (a > 100){   
-b = b + a * 1.20;  
-a = a - 100; 
-}
-  
- 
-if (a > 250){
-b = b + a * 1.50;    
-}
-  
-printf ("YOUR UNIT COST IS %f\n", b);
-  
-printf ("SURCHARGE IS 20%\n");
-  
-c = b + b * 0.2;
-  
-printf ("YOUR TOTAL COST INC SURCHARGE %f\n", c);
-  
-return 0;
+//AUTHOR MIJAN
+int main()
+ {
+ float unit, bill, scharge, total;
+ re:
+ printf("Enter units: ");
+ scanf("%f", &unit);
 
-}
+ if (unit>= 0)
+ {
+ if (unit<=50)
+ {
+ bill = unit*0.50;
+ scharge = (20*bill)/100;
+ total = bill + scharge;
+ }
+ else if (unit>50 && unit<=150)
+ {
+ bill = ((unit-50)*0.75)+(50­*0.50);
+ scharge = (20*bill)/100;
+ total = bill + scharge;
+ }
+ else if (unit>150 && unit<=250)
+ {
+ bill = ((unit-150)*1.20)+(1­00*0.75)+(50*0.50);
+ scharge = (20*bill)/100;
+ total = bill + scharge;
+ }
+ else if (unit>250)
+ {
+ bill = ((unit-250)*1.50)+(1­00*1.20)+(100*0.75)+­(50*0.50);
+ scharge = (20*bill)/100;
+ total = bill + scharge;
+ }
+ }
+ else
+ {
+ printf("\nINVALID INPUT!! Please enter unit within range (>0)!\n");
+ goto re;
+ }
+ printf("Electricity bill for %.2f units is Rs. %.2f/-", unit, bill);
+ printf("\nSurcharge is Rs. %.2f/-", scharge);
+ printf("\nTotal bill to be paid is Rs. %.2f/-", total);
+ return 0; 
+ }
 
 /////////////////////////////////////////////////
   
 #include <stdio.h>
-  
+//AUTHOR DIWAS
 int main(){
   
 int a[5];     // entered num are stored in array
