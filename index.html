@@ -3,16 +3,14 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <style>
          body{
-         margin-left: 2%;
-         margin-right: 2%;
-         margin-top: 2%;
-         margin-bottom: 2%;
+         margin: 2%;
          background: url("background.jpg");
          background-repeat: none;
          background-position: center;
          background-size:  cover;
          overflow: auto;
          background-attachment: fixed;
+         overflow-x: hidden;
          }
          .text{
          margin-bottom: 5%;
@@ -31,16 +29,14 @@
          font-weight: ;
          }
          #nav-bar{
-         padding: 1%;
          background-color: #ffffcc;
          font-family: Andalus;
-         padding-right: 3%;
-         padding-left: 3%;
+         padding: 1%;
          font-size:  25px;
          font-weight: bold;
          border: 1px solid black;
          opacity: 0.8;
-         overflow: hidden;
+         width: auto;
          }
          #name{
          font-size:  25px;
@@ -53,6 +49,7 @@
          }
          .lastlink{
          font-size: 20px;
+         margin: 10px;
          }
          a{
          text-decoration: none;
@@ -77,27 +74,8 @@
          margin-bottom: ;
          border: 1px solid black;
          padding: 1%;
-         width: 15%;
-         }
-         #container { display:block; }
-         @media only screen and (orientation:portrait){
-         #container {  
-         height: 100vw;
-         -webkit-transform: rotate(90deg);
-         -moz-transform: rotate(90deg);
-         -o-transform: rotate(90deg);
-         -ms-transform: rotate(90deg);
-         transform: rotate(90deg);
-         }
-         }
-         @media only screen and (orientation:landscape){
-         #container {  
-         -webkit-transform: rotate(0deg);
-         -moz-transform: rotate(0deg);
-         -o-transform: rotate(0deg);
-         -ms-transform: rotate(0deg);
-         transform: rotate(0deg);
-         }
+         margin-right: 10%;
+         margin-left: 10%;
          }
       </style>
       <title>
