@@ -1,5 +1,6 @@
 <html>
    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <style>
          body{
          margin-left: 2%;
@@ -78,37 +79,59 @@
          padding: 1%;
          width: 15%;
          }
+         #container { display:block; }
+         @media only screen and (orientation:portrait){
+         #container {  
+         height: 100vw;
+         -webkit-transform: rotate(90deg);
+         -moz-transform: rotate(90deg);
+         -o-transform: rotate(90deg);
+         -ms-transform: rotate(90deg);
+         transform: rotate(90deg);
+         }
+         }
+         @media only screen and (orientation:landscape){
+         #container {  
+         -webkit-transform: rotate(0deg);
+         -moz-transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+         -ms-transform: rotate(0deg);
+         transform: rotate(0deg);
+         }
+         }
       </style>
       <title>
          PROFILE SITE
       </title>
    </head>
    <body>
-      <div id="nav-bar">
-         <table>
-            <tr>
-               <td id="name">NIKAS</td>
-               <td><span class="links"><a href="#">|HOME|</a></span></td>
-               <td><span class="links"><a href="#">|WORK|</a></span></td>
-               <td><span class="links"><a href="#">|ABOUT|</a></span></td>
-               <td><span class="lastlink"><a href="#">|LINK|</a></span></td>
-            </tr>
-         </table>
-      </div>
-      <!--nav bar closed-->
-      <center>
-         <img src="hexnikas.png"><br>
-         <span class="big-name">NIKAS GHIMIRE</span>
-      </center>
-      <!--image closed-->
-      <div class="text">
-         +2 SCIENCE STUDENT. I HAVE KEEN INTEREST IN PROGRAMMING. "WHY PROGRAMMING ?" YOU MAY ASK. YOU CAN CREATE ALMOST ANYTHING YOU WANT IN A VIRTUAL SPACE. ITS FUN AND EXITING.
-      </div>
-      <center>
-         <div class="ending">
-            &copy NIKAS GHIMIRE
+      <div class="container">
+         <div id="nav-bar">
+            <table>
+               <tr>
+                  <td id="name">NIKAS</td>
+                  <td><span class="links"><a href="#">|HOME|</a></span></td>
+                  <td><span class="links"><a href="#">|WORK|</a></span></td>
+                  <td><span class="links"><a href="#">|ABOUT|</a></span></td>
+                  <td><span class="lastlink"><a href="#">|LINK|</a></span></td>
+               </tr>
+            </table>
          </div>
-      </center>
+         <!--nav bar closed-->
+         <center>
+            <img src="hexnikas.png"><br>
+            <span class="big-name">NIKAS GHIMIRE</span>
+         </center>
+         <!--image closed-->
+         <div class="text">
+            +2 SCIENCE STUDENT. I HAVE KEEN INTEREST IN PROGRAMMING. "WHY PROGRAMMING ?" YOU MAY ASK. YOU CAN CREATE ALMOST ANYTHING YOU WANT IN A VIRTUAL SPACE. ITS FUN AND EXITING.
+         </div>
+         <center>
+            <div class="ending">
+               &copy NIKAS GHIMIRE
+            </div>
+         </center>
+      </div>
    </body>
    <!-- https://wallpapersmug.com/download/1600x900/a05d34/grid-black-pattern-yellow-glow.jpg -->
 </html>
