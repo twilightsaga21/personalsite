@@ -42,6 +42,7 @@ body{
     border: 1px solid black;
     opacity: 0.8;
     overflow: hidden;
+    margin-bottom: 5%;
 }
 #name{
     font-size:  25px;
@@ -64,7 +65,7 @@ img{
 	margin-bottom: 5%;
 }
 .big-name{
-	margin-top: 5%;
+	margin: 5%;
 	background-color: #ffffcc;
 	padding: 1%;
 	border: 1px solid black;
@@ -79,15 +80,53 @@ img{
 	width: 90%;
 }	
 .ending{
-	background-color: #ffffcc;
-	opacity: 0.7;
-	text-align: center;
-	font-family: calibri;
-	margin-bottom: ;
-	border: 1px solid black;
-	padding: 1%;
-	width: 15%;
-	margin: 3%;
+    background-color: #ffffcc;
+    opacity: 0.7;
+    text-align: center;
+    font-family: calibri;
+    margin-bottom: ;
+    border: 1px solid black;
+    padding: 1%;
+    width: 15%;
+    margin: 3%;
+}
+.container{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.box{
+    width: 200px;
+    height: 300px;
+    background-color: #ffffcc;
+    margin: 5%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    font-size: 50px;
+    display: block;
+}
+
+.box:hover{
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink{
+0%{opacity: .2;}
+50%{opacity: .5;}
+100%{opacity: 0.7;}
+}
+
+img{
+    margin-top: 0;
+    height: 100%;
+    width: 100%;
 }
 </style>
     <title>
@@ -105,21 +144,36 @@ img{
                     <td><span class="lastlink"><a href="link.html">|LINK|</a></span></td>
                 </tr>
             </table>
-         </div><!--nav bar closed-->
-         <center>
-         			<img src="./assets/hexnikas.png"><br>
-         			<span class="big-name">NIKAS GHIMIRE</span>
-   
-         </center><!--image closed-->
-        <div class="text">
-         	+2 SCIENCE STUDENT. I HAVE KEEN INTEREST IN PROGRAMMING. "WHY PROGRAMMING ?" YOU MAY ASK. YOU CAN CREATE ALMOST ANYTHING YOU WANT IN A VIRTUAL SPACE. ITS FUN AND EXITING.
-        </div>
-        <center>
-        <div class="ending">
-	&copy NIKAS GHIMIRE
-</div></center>
-</div><!--main wrapper closed-->
-   </body>
-    <!-- https://wallpapersmug.com/download/1600x900/a05d34/grid-black-pattern-yellow-glow.jpg -->
-</html>
+         </div>
+<center>
+    <span class="big-name">HERE ARE SOME OF MY WORKS</span>
+</center>
 
+<div class="container">
+<div class="box">
+<a href="http://nikas.lovestoblog.com"><img src="./assets/blog.png"></a>
+</div>
+<div class="box">
+<a href="https://nikas.com.np/c"><img src="./assets/neb.png"></a>
+</div>
+<div class="box">
+<a href="https://nikas.com.np/talk"><img src="./assets/chat.png"></a>
+</div>    
+<div class="box">
+<a href="https://nikas.com.np/tiktok"><img src="./assets/tiktok.png"></a>
+</div>
+<div class="box">
+<a href="#"><img src="./assets/anime.png"></a>
+</div>
+<div class="box">
+<a href="https://youtube.com/wasdthedebugger"><img src="./assets/youtube.png"></a>
+</div>
+</div>
+
+<center>
+<div class="ending">
+    &copy NIKAS GHIMIRE</div>
+</div></center>
+</div>
+</body>
+</html>
