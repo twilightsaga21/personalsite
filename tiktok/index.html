@@ -29,9 +29,6 @@ $('.ifield').keypress(function (e) {
 	body{
 		text-align: center;
 		background-color: #12011c;
-		display: flex;
-  		justify-content: center;
-  		align-items: center;
 	}
 
 	#logo{
@@ -68,7 +65,12 @@ $('.ifield').keypress(function (e) {
 	}
 
 	#main{
-		
+		position: absolute;
+    		top: 50%;
+   		left: 50%;
+    		-moz-transform: translateX(-50%) translateY(-50%);
+    		-webkit-transform: translateX(-50%) translateY(-50%);
+    		transform: translateX(-50%) translateY(-50%);
 	}
 	
 </style>
